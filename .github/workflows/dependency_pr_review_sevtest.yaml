@@ -13,4 +13,4 @@ jobs:
       - name: 'Dependency Review'
         uses: pawnu/dependency-review-action@main
         with:
-          fail-on: 'high' 
+          fail-on: 'gibberish' 
