@@ -1,0 +1,16 @@
+name: 'Dependency Review Sev Test'
+on: [pull_request]
+
+permissions:
+  contents: read
+
+jobs:
+  dependency-review:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 'Checkout Repository'
+        uses: actions/checkout@v3
+      - name: 'Dependency Review'
+        uses: pawnu/dependency-review-action
+        with:
+          severity-threshold: 'critical' 
