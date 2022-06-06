@@ -1,4 +1,4 @@
-name: 'Dependency Review Sev Test'
+name: 'Dependency Review Config File Test'
 on: [pull_request]
 
 permissions:
